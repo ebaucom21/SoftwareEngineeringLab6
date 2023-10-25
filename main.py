@@ -16,7 +16,7 @@ if __name__ == "__main__":
 				# Option 2
 				# To be implemented
 				decode()
-			case 3:
+			case default:
 				break
 
 
@@ -31,7 +31,7 @@ def encode(num):
 	fin = ""
 	st = str(num)
 	for i in range(len(st)):
-		temp = int(st[len(st)-1-i])+3
+		temp = int(st[i])+3
 		fin += str(int%10)
 	return int(fin)
 
