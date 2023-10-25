@@ -9,7 +9,7 @@ def encode(num):
 	st = str(num)
 	for i in range(len(st)):
 		temp = int(st[i])+3
-		fin += str(int%10)
+		fin += str(temp%10)
 	return int(fin)
 
 
