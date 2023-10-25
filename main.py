@@ -1,3 +1,23 @@
+# Menu function to print initial user menu
+def menu():
+	print("Menu\n-------------\n1. Encode\n2. Decode\n3. Quit\n)
+
+
+# Encode function that moves all digits up 3
+def encode(num):
+	fin = ""
+	st = str(num)
+	for i in range(len(st)):
+		temp = int(st[i])+3
+		fin += str(int%10)
+	return int(fin)
+
+
+# Decode function that moves all digits down by 3
+# To be implemented
+def decode(num):
+	return 0
+
 
 # Main Function
 if __name__ == "__main__":
@@ -21,22 +41,3 @@ if __name__ == "__main__":
 
 
 
-# Menu function to print initial user menu
-def menu():
-	print("Menu\n-------------\n1. Encode\n2. Decode\n3. Quit\n)
-
-
-# Encode function that moves all digits up 3
-def encode(num):
-	fin = ""
-	st = str(num)
-	for i in range(len(st)):
-		temp = int(st[i])+3
-		fin += str(int%10)
-	return int(fin)
-
-
-# Decode function that moves all digits down by 3
-# To be implemented
-def decode(num):
-	return 0
